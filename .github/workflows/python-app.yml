@@ -28,15 +28,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Print current directory
+     - name: Change directory to tests
       run: |
-          cd .. 
-    - name: List directories
-      run: |
-        ls -d 
-    - name: Print current directory
-      run: |
-        pwd    
+        cd apiTestPython/tests
     - name: Test with pytest
       run: |
         pytest api/test_main.py
