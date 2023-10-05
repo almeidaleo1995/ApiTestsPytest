@@ -33,7 +33,10 @@ jobs:
         pwd 
     - name: Change directory to tests
       run: |
-        cd tests
+        cd  ./
+    - name: Print current directory
+      run: |
+        pwd    
     - name: Test with pytest
       run: |
         pytest api/test_main.py
