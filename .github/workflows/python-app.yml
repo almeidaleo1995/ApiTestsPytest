@@ -31,9 +31,9 @@ jobs:
     - name: Print current directory
       run: |
         pwd 
-    - name: Change directory to tests
+    - name: List directories
       run: |
-        cd  ./
+        ls -d 
     - name: Print current directory
       run: |
         pwd    
