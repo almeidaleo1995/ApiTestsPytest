@@ -37,6 +37,6 @@ jobs:
     - name: Run tests
       run: |
         echo "Running tests..."
-        pytest apiTestPython/tests
+        pytest apiTestPython/test_main.py
 
 
