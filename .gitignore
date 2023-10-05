@@ -1,0 +1,12 @@
+__pycache__/
+.cython/
+.pytest_cache/
+.cache/
+
+*.pyc
+*.pyo
+*~
+__pycache__/
+*.egg-info/
+instance/
+*.log
