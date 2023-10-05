@@ -52,7 +52,7 @@ Swagger API
 
 7. Running the Tests:
     ```bash
-     pytest tests\api\test_main.py
+     pytest test_main.py
 
 ## Configuration     
 You can configure the test environment and parameters in the pytest.ini file.
