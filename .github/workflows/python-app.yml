@@ -28,7 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         pip install fastapi uvicorn[standard]
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        pip install -r apiTestPython/requirements.txt
     - name: Test with pytest
       run: |
         pytest -c apiTestPython/tests apiTestPython/tests/api/test_main.py
