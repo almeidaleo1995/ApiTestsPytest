@@ -1,6 +1,3 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
-
 name: Python application
 
 on:
@@ -29,4 +26,17 @@ jobs:
         pip install flake8 pytest
         pip install fastapi uvicorn[standard]
         pip install -r apiTestPython/requirements.txt
+    - name: Clear cache
+      run: |
+        echo "Clearing cache..."
+        rm -rf __pycache__ .pytest_cache/
+    - name: Build project
+      run: |
+        echo "Building project..."
+        # Adicione aqui os comandos de construção, se necessário
+    - name: Run tests
+      run: |
+        echo "Running tests..."
+        pytest apiTestPython/test_main.py
+
 
